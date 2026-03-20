@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Bella Cucina - Authentic Italian Restaurant</title>
+
+  <!-- EXTERNAL CSS (Method 3) -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- INTERNAL CSS (Method 2) -->
+  <style>
+    /* Internal CSS - styles specific to this page */
+    h2 {
+      color: #8B0000;
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .section-divider {
+      border: none;
+      border-top: 3px solid #8B0000;
+      margin: 30px auto;
+      width: 80%;
+    }
+
+    table {
+      width: 90%;
+      margin: 0 auto;
+      border-collapse: collapse;
+    }
+
+    th {
+      background-color: #8B0000;
+      color: white;
+      padding: 12px;
+      font-size: 16px;
+    }
+
+    td {
+      padding: 10px 14px;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f5e6e6;
+    }
+
+    tr:hover {
+      background-color: #f0c9c9;
+    }
+
+    .price {
+      color: #8B0000;
+      font-weight: bold;
+    }
+
+    form label {
+      display: block;
+      margin-top: 12px;
+      font-weight: bold;
+      color: #5a0000;
+    }
+
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 8px 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    form input[type="submit"] {
+      background-color: #8B0000;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+      border-radius: 6px;
+      width: 100%;
+    }
+
+    form input[type="submit"]:hover {
+      background-color: #5a0000;
+    }
+
+    .gallery img {
+      width: 30%;
+      margin: 1%;
+      border-radius: 8px;
+      border: 3px solid #8B0000;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <!-- Image as Link (clicking logo goes to top of page) -->
+    <a href="#top">
+      <img src="images/logo.png"
+           alt="La Bella Cucina Logo"
+           title="Go to Homepage"
+           width="80"
+           height="80">
+    </a>
+
+    <!-- INLINE CSS (Method 1) used here -->
+    <h1 style="color: white; font-size: 42px; margin: 0;">🍴 La Bella Cucina</h1>
+    <p style="color: #FFD700; font-size: 18px; margin: 5px 0;">Authentic Italian Cuisine Since 1995</p>
+  </header>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#reserve">Reserve Table</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="menu.htm" target="_blank">Full Menu PDF</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HOME SECTION ===== -->
+  <section id="home">
+
+    <!-- Hero Banner Image -->
+    <img src="images/banner.jpg"
+         alt="Restaurant Interior"
+         title="Welcome to La Bella Cucina"
+         class="hero-img">
+
+    <h2>Welcome to La Bella Cucina</h2>
+    <p class="intro-text">
+      We bring you the finest Italian dining experience with hand-crafted pasta,
+      wood-fired pizzas, and desserts straight from the heart of Italy.
+      Come, sit, and enjoy the taste of tradition.
+    </p>
+
+    <hr class="section-divider">
+
+    <!-- WHY CHOOSE US - Unordered List -->
+    <h2>Why Choose Us?</h2>
+    <ul class="feature-list">
+      <li>🍕 <strong>Wood-fired Pizza</strong> baked in our authentic stone oven</li>
+      <li>🍝 <strong>Fresh Handmade Pasta</strong> prepared daily by our chefs</li>
+      <li>🍷 <strong>Premium Wine Selection</strong> from top Italian vineyards</li>
+      <li>🌿 <strong>Farm-to-Table Ingredients</strong> — fresh, local, and organic</li>
+      <li>👨‍🍳 <strong>Award-Winning Chefs</strong> with 20+ years of experience</li>
+    </ul>
+
+    <hr class="section-divider">
+
+    <!-- OPENING HOURS - Ordered List -->
+    <h2>Opening Hours</h2>
+    <ol class="hours-list">
+      <li>Monday – Friday : 11:00 AM to 10:00 PM</li>
+      <li>Saturday : 10:00 AM to 11:00 PM</li>
+      <li>Sunday : 12:00 PM to 9:00 PM</li>
+    </ol>
+
+    <hr class="section-divider">
+
+    <!-- CUISINE INFO - Definition List -->
+    <h2>Our Specialties</h2>
+    <dl class="def-list">
+      <dt>Margherita Pizza</dt>
+      <dd>Classic tomato base with fresh mozzarella and basil leaves.</dd>
+
+      <dt>Pasta Carbonara</dt>
+      <dd>Creamy egg-based sauce with bacon, parmesan, and black pepper.</dd>
+
+      <dt>Tiramisu</dt>
+      <dd>Traditional Italian dessert with espresso-soaked ladyfingers and mascarpone.</dd>
+    </dl>
+
+  </section>
+
+  <!-- ===== MENU TABLE SECTION ===== -->
+  <section id="menu">
+    <hr class="section-divider">
+    <h2>Our Menu</h2>
+
+    <table border="1" cellspacing="0" cellpadding="10">
+      <caption style="font-size:18px; font-weight:bold; margin-bottom:10px; color:#8B0000;">
+        🍽️ La Bella Cucina — Food Menu
+      </caption>
+
+      <thead>
+        <tr>
+          <th>Dish</th>
+          <th>Category</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Margherita Pizza</td>
+          <td>Pizza</td>
+          <td>Tomato, Mozzarella, Basil</td>
+          <td class="price">₹350</td>
+        </tr>
+        <tr>
+          <td>Pasta Arrabbiata</td>
+          <td>Pasta</td>
+          <td>Spicy tomato sauce with penne</td>
+          <td class="price">₹280</td>
+        </tr>
+        <tr>
+          <td>Pasta Carbonara</td>
+          <td>Pasta</td>
+          <td>Creamy egg sauce with bacon</td>
+          <td class="price">₹320</td>
+        </tr>
+        <tr>
+          <td>Bruschetta</td>
+          <td>Starter</td>
+          <td>Toasted bread with tomatoes & herbs</td>
+          <td class="price">₹150</td>
+        </tr>
+        <tr>
+          <td>Minestrone Soup</td>
+          <td>Starter</td>
+          <td>Vegetable soup with pasta</td>
+          <td class="price">₹180</td>
+        </tr>
+        <tr>
+          <td>Tiramisu</td>
+          <td>Dessert</td>
+          <td>Classic Italian coffee dessert</td>
+          <td class="price">₹200</td>
+        </tr>
+        <tr>
+          <td>Panna Cotta</td>
+          <td>Dessert</td>
+          <td>Vanilla cream with berry sauce</td>
+          <td class="price">₹180</td>
+        </tr>
+        <tr>
+          <td>Espresso</td>
+          <td>Beverage</td>
+          <td>Strong Italian coffee shot</td>
+          <td class="price">₹80</td>
+        </tr>
+        <tr>
+          <td>Lemonade</td>
+          <td>Beverage</td>
+          <td>Fresh squeezed lemon drink</td>
+          <td class="price">₹60</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+
+  <!-- ===== IMAGE GALLERY ===== -->
+  <section id="gallery">
+    <hr class="section-divider">
+    <h2>Food Gallery</h2>
+
+    <div class="gallery">
+      <!-- Images as Links -->
+      <a href="images/food1.jpg">
+        <img src="images/food1.jpg" alt="Margherita Pizza" title="Margherita Pizza">
+      </a>
+      <a href="images/food2.jpg">
+        <img src="images/food2.jpg" alt="Pasta Carbonara" title="Pasta Carbonara">
+      </a>
+      <a href="images/food3.jpg">
+        <img src="images/food3.jpg" alt="Tiramisu Dessert" title="Tiramisu">
+      </a>
+    </div>
+
+  </section>
+
+  <!-- ===== RESERVATION FORM ===== -->
+  <section id="reserve">
+    <hr class="section-divider">
+    <h2>Reserve a Table</h2>
+
+    <div class="form-container">
+      <form action="submit.php" method="POST">
+
+        <fieldset>
+          <legend>Personal Details</legend>
+
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name"
+                 placeholder="Enter your full name" required>
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email"
+                 placeholder="Enter your email" required>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone"
+                 placeholder="Enter your phone number">
+        </fieldset>
+
+        <fieldset>
+          <legend>Reservation Details</legend>
+
+          <label for="date">Reservation Date:</label>
+          <input type="date" id="date" name="date" required>
+
+          <label for="time">Preferred Time:</label>
+          <input type="time" id="time" name="time">
+
+          <label for="guests">Number of Guests:</label>
+          <select id="guests" name="guests">
+            <option value="">-- Select --</option>
+            <option value="1-2">1 - 2 Guests</option>
+            <option value="3-5">3 - 5 Guests</option>
+            <option value="6-10">6 - 10 Guests</option>
+            <option value="10+">More than 10</option>
+          </select>
+
+          <label>Seating Preference:</label>
+          <input type="radio" name="seating" value="indoor"> Indoor &nbsp;
+          <input type="radio" name="seating" value="outdoor"> Outdoor &nbsp;
+          <input type="radio" name="seating" value="any" checked> No Preference
+
+          <label>Dietary Requirements:</label>
+          <input type="checkbox" name="diet" value="veg"> Vegetarian &nbsp;
+          <input type="checkbox" name="diet" value="vegan"> Vegan &nbsp;
+          <input type="checkbox" name="diet" value="gf"> Gluten-Free
+
+          <label for="notes">Special Requests:</label>
+          <textarea id="notes" name="notes" rows="4"
+                    placeholder="Any special requests or notes..."></textarea>
+        </fieldset>
+
+        <input type="submit" value="🍽️ Reserve My Table">
+        <input type="reset" value="Clear Form"
+               style="background:#ccc; color:#333; border:none; padding:10px;
+                      font-size:14px; cursor:pointer; margin-top:8px;
+                      border-radius:6px; width:100%;">
+
+      </form>
+    </div>
+
+  </section>
+
+  <!-- ===== IFRAME - GOOGLE MAPS ===== -->
+  <section id="location">
+    <hr class="section-divider">
+    <h2>Find Us Here</h2>
+
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242118.05290729868!2d73.6957225!3d18.5245649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000"
+        width="100%"
+        height="300"
+        style="border:2px solid #8B0000; border-radius:8px;"
+        allowfullscreen=""
+        loading="lazy"
+        title="La Bella Cucina Location">
+      </iframe>
+    </div>
+
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact">
+    <hr class="section-divider">
+    <h2>Contact Us</h2>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>📍 Address</h3>
+        <p>12, MG Road, Koregaon Park<br>Pune, Maharashtra - 411001</p>
+      </div>
+      <div class="contact-card">
+        <h3>📞 Phone</h3>
+        <!-- Tel Link -->
+        <p><a href="tel:+912012345678">+91 20 1234 5678</a></p>
+      </div>
+      <div class="contact-card">
+        <h3>📧 Email</h3>
+        <!-- Email Link -->
+        <p><a href="mailto:info@labellacucina.com">info@labellacucina.com</a></p>
+      </div>
+      <div class="contact-card">
+        <h3>🌐 Website</h3>
+        <p><a href="https://www.labellacucina.com" target="_blank">www.labellacucina.com</a></p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>
+      <a href="#top" style="color: #FFD700;">Back to Top ↑</a>
+    </p>
+    <p>&copy; 2024 La Bella Cucina. All Rights Reserved.</p>
+    <p style="font-size: 13px; color: #aaa;">
+      Made with ❤️ using HTML &amp; CSS
+    </p>
+  </footer>
+
+</body>
+</html>

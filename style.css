@@ -1,0 +1,219 @@
+/* ============================================
+   EXTERNAL CSS — style.css
+   La Bella Cucina Restaurant Website
+   ============================================ */
+
+/* --- Global Reset & Base --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FFF8F0;
+  color: #333333;
+  line-height: 1.7;
+}
+
+/* --- Header --- */
+header {
+  background-color: #8B0000;
+  color: white;
+  text-align: center;
+  padding: 25px 20px;
+}
+
+header img {
+  border-radius: 50%;
+  border: 3px solid #FFD700;
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+
+/* --- Navigation Bar --- */
+nav {
+  background-color: #5a0000;
+  text-align: center;
+  padding: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  color: #FFD700;
+  text-decoration: none;
+  padding: 14px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #8B0000;
+  color: white;
+}
+
+/* --- Sections --- */
+section {
+  padding: 30px 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* --- Hero Banner Image --- */
+.hero-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid #8B0000;
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* --- Intro Text --- */
+.intro-text {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+  margin: 15px auto;
+  max-width: 750px;
+}
+
+/* --- Feature List (ul) --- */
+.feature-list {
+  list-style: none;
+  padding: 10px 30px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.feature-list li {
+  padding: 8px 0;
+  font-size: 15px;
+  border-bottom: 1px dashed #ddd;
+}
+
+/* --- Hours List (ol) --- */
+.hours-list {
+  max-width: 500px;
+  margin: 10px auto;
+  padding-left: 30px;
+  font-size: 15px;
+}
+
+.hours-list li {
+  padding: 6px 0;
+}
+
+/* --- Definition List (dl) --- */
+.def-list {
+  max-width: 700px;
+  margin: 10px auto;
+  padding: 0 20px;
+}
+
+.def-list dt {
+  font-weight: bold;
+  color: #8B0000;
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+.def-list dd {
+  margin-left: 20px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* --- Gallery --- */
+.gallery {
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* --- Form Container --- */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 25px 30px;
+  border-radius: 10px;
+  border: 2px solid #8B0000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  color: #8B0000;
+  padding: 0 8px;
+  font-size: 15px;
+}
+
+/* --- Map Container --- */
+.map-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* --- Contact Grid --- */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  background: white;
+  border: 2px solid #8B0000;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.contact-card h3 {
+  color: #8B0000;
+  margin-bottom: 8px;
+}
+
+.contact-card a {
+  color: #8B0000;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+/* --- Footer --- */
+footer {
+  background-color: #5a0000;
+  color: #ddd;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 14px;
+  line-height: 2;
+}
